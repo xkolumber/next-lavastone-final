@@ -2,6 +2,14 @@ import React from "react";
 import { basic } from "../data/ProductsDataSk";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Poďakovanie",
+  openGraph: {
+    title: "Naše služby",
+  },
+};
 
 const Page = () => {
   return (

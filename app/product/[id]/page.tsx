@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import Image from "next/image";
+import Head from "next/head";
 
 interface ProductData {
   id: number;
@@ -112,8 +113,17 @@ const Page = ({ params }: { params: { id: string } }) => {
   const firstFourItems = product.images.slice(0, 4);
   const lastSixItems = product.images.slice(4);
 
+  const productUrl = `https://www.lavastone.sk/product/${params.id}`;
   return (
     <main>
+      <Head>
+        <title>{product.title}</title>
+        <meta name="description" content={product.title_description} />
+        <meta property="og:title" content={product.title} />
+        <meta property="og:description" content={product.title_description} />
+        <meta property="og:image" content={product.title_image} />
+        <meta property="og:url" content={productUrl} />
+      </Head>
       <div className={`product_introduction ${customClassName}`}>
         <div className="fixed_height" />
         <div className="inside">

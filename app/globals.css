@@ -1398,9 +1398,7 @@ a.download {
 .toggle_text_service, .toggle_text_service_no_padding{
     padding-bottom: 1rem !important;
 }
-.toggle_text_service_no_padding{
-    max-width: 55vw !important;
-}
+
 .toggle_images_title{
     display: flex;
     gap: 2rem;
@@ -1459,6 +1457,9 @@ a.download {
     .togggle_layer{
         width:4.5rem;
     }
+    .toggle_text_service_no_padding{
+        max-width: 55vw !important;
+    }
     .card_togggle_arrow{
         width:51px;
     }
@@ -1480,6 +1481,9 @@ a.download {
       }
       .togggle_layer{
         width:7rem;
+    }
+    .togggle_arrow{
+        width:50px;
     }
     .card_togggle_arrow{
         width:60px;

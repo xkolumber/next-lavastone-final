@@ -1,6 +1,16 @@
 import React from "react";
 import { privacy } from "../data/ProductsDataSk";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ochrana osobných údajov",
+  description: "Ochrana Vašich údajov",
+  openGraph: {
+    title: "Ochrana osobných údajov",
+    description: "Ochrana Vašich údajov",
+  },
+};
 
 const Page = () => {
   return (

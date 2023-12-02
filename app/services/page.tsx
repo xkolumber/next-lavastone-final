@@ -3,6 +3,24 @@ import { basic, services } from "../data/ProductsDataSk";
 import Link from "next/link";
 import ToggleText from "../components/ToggleText";
 import UniqueElement from "../components/UniqueElement";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Naše služby",
+  description:
+    "V LAVASTONE sa postaráme o kompletné zariadenie vášho domova dizajnovými kúskami.",
+  openGraph: {
+    title: "Naše služby",
+    description:
+      "V LAVASTONE sa postaráme o kompletné zariadenie vášho domova dizajnovými kúskami.",
+    images: [
+      {
+        url: "https://storage.googleapis.com/lavastone/sansone/main.jpg",
+        alt: "Sansone fotka",
+      },
+    ],
+  },
+};
 
 const Page = () => {
   return (

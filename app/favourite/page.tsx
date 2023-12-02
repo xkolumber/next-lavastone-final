@@ -10,6 +10,22 @@ import { ClipLoader } from "react-spinners";
 import { basic } from "../data/ProductsDataSk";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Obľúbené produkty",
+  description: "Výber Vašich obľúbených produktov",
+  openGraph: {
+    title: "Obľúbené produkty",
+    description: "Výber Vašich obľúbených produktov",
+    images: [
+      {
+        url: "https://storage.googleapis.com/lavastone/pietracolata/main.jpg",
+        alt: "Obľúbené produkty z Lavastone",
+      },
+    ],
+  },
+};
 
 const Page = () => {
   const [favoriteImages, setFavoriteImages] = useState(

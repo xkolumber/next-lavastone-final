@@ -6,6 +6,24 @@ import ProductSkeleton from "../components/ProductSkeleton";
 import Link from "next/link";
 import ImageAbout from "../components/ImageAbout";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "O nás",
+  description:
+    "Naša vášeň pre interiérový dizajn nás viedla k objavovaniu nových materiálov a konceptov. Zasvätili sme sa vytváraniu jedinečných prvkov s dôrazom na dizajn, detail a materiálovú inováciu.",
+  openGraph: {
+    title: "O nás",
+    description:
+      "Naša vášeň pre interiérový dizajn nás viedla k objavovaniu nových materiálov a konceptov. Zasvätili sme sa vytváraniu jedinečných prvkov s dôrazom na dizajn, detail a materiálovú inováciu.",
+    images: [
+      {
+        url: "https://storage.googleapis.com/lavastone/o_nas/mainn.jpg",
+        alt: "Fotka lávy",
+      },
+    ],
+  },
+};
 
 const Page = () => {
   if (!about_us) {
