@@ -18,6 +18,17 @@ export const generateMetadata = ({ params }: Props): Metadata => {
 
   return {
     title: `${productById.title}`,
+    description: `${productById.title_description}`,
+    openGraph: {
+      title: `${productById.title}`,
+      description: `${productById.title_description}`,
+      images: [
+        {
+          url: `${productById.title_image}`,
+          alt: `Produktová fotka - ${productById.title}`,
+        },
+      ],
+    },
   };
 };
 

@@ -1,12 +1,10 @@
-import React from "react";
-import UniqueElement from "../components/UniqueElement";
-import { about_us, basic } from "../data/ProductsDataSk";
-import ToggleText from "../components/ToggleText";
-import ProductSkeleton from "../components/ProductSkeleton";
+import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ImageAbout from "../components/ImageAbout";
-import Image from "next/image";
-import { Metadata } from "next";
+import ToggleText from "../components/ToggleText";
+import UniqueElement from "../components/UniqueElement";
+import { about_us, basic } from "../data/ProductsDataSk";
 
 export const metadata: Metadata = {
   title: "O nás",
