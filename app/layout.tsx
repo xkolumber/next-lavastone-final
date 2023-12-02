@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 import "./normalize.css";
 import HydrationZustand from "./components/HydrationZustand";
+import CookieComponent from "./components/CookieComponent";
+import ScrollButtonTop from "./components/ScrollButtonTop";
 
 const manrope = Manrope({
   weight: ["200", "300", "400", "600", "700"],
@@ -23,9 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="sk">
       <body className={manrope.className}>
         <HydrationZustand>
+          <ScrollButtonTop />
           <Navbar />
           {children}
           <Footer />

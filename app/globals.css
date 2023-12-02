@@ -878,6 +878,7 @@ li{
 .btn--secondary{
     background:white;
     color:var(--fourthiary-color);
+    min-width: 130px;
 }
 .btn--secondary:hover{
     background:black;
@@ -1711,6 +1712,7 @@ textarea{
 }
 .custom-checkbox h3{
     font-size: 1.6rem;
+
     font-weight: 300;
     opacity: 0.5;
     white-space: nowrap;      

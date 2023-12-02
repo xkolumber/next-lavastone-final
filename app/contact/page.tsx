@@ -48,7 +48,7 @@ const Page = () => {
 
     try {
       const response = await fetch(
-        process.env.BACKEND_API!, // <-- Comma was missing here
+        process.env.NEXT_PUBLIC_BACKEND_API2!, // <-- Comma was missing here
         {
           method: "POST",
           headers: {
@@ -187,7 +187,7 @@ const Page = () => {
               disabled={isLoading}
             >
               {isLoading ? (
-                <ClipLoader size={20} color={"#ffffff"} loading={isLoading} />
+                <ClipLoader size={20} color={"#32a8a0"} loading={isLoading} />
               ) : (
                 "Odoslať"
               )}

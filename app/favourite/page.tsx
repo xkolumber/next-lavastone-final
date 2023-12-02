@@ -130,7 +130,7 @@ const Page = () => {
   const onSubmit = async (data: FieldValues) => {
     setIsLoading(true);
     try {
-      const response = await fetch(process.env.BACKEND_API2!, {
+      const response = await fetch(process.env.NEXT_PUBLIC_BACKEND_API!, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -216,7 +216,7 @@ const Page = () => {
                   {isLoading ? (
                     <ClipLoader
                       size={20}
-                      color={"#ffffff"}
+                      color={"#32a8a0"}
                       loading={isLoading}
                     />
                   ) : (
@@ -238,7 +238,7 @@ const Page = () => {
               )}
               <div>
                 {" "}
-                <button className="btn btn--popup" onClick={closeAll}>
+                <button className="btn btn--secondary" onClick={closeAll}>
                   Naspať
                 </button>
               </div>
