@@ -31,7 +31,7 @@ const Page = () => {
   }
 
   return (
-    <div className="product_introduction">
+    <div className="product_introduction product_silver">
       <div className="fixed_height" />
       <div className="inside">
         <div>

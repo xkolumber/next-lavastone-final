@@ -3,9 +3,7 @@ import { create } from 'zustand';
 
 let initialData:string[] = [];
 if (typeof window !== "undefined" && window.localStorage) {
-  initialData = JSON.parse(localStorage.getItem("favoriteImages") || "[]");
-  console.log(initialData);
-}
+  initialData = JSON.parse(localStorage.getItem("favoriteImages") || "[]");}
 
 interface CounterStore {
   counter: number;

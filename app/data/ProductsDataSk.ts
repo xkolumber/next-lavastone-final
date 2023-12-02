@@ -62,7 +62,7 @@ export const introduction_products=[
   
 export const products = [
   {
-    id: 1,
+    id: "1",
     title: "Pietracolata",
     title_image: 'https://storage.googleapis.com/lavastone/pietracolata/main.jpg',
     title_description: "Zvýraznenie interiéru vzhľadom lávového kameňa, za ktorým sa skrýva jedinečný príbeh. Značky, ktoré ponúkame, vyberáme starostlivo, podľa vkusu našich zákazníkov.",
@@ -107,7 +107,7 @@ export const products = [
 
   },
   {
-    id: 2,
+    id: "2",
     title: "Fucina",
     title_image: 'https://storage.googleapis.com/lavastone/fucina/main.jpg',
     title_description: "Ide o kolekciu od značky PIETRACOLATA venovanú gastronomickej scéne. Názov FUCINA je inšpirovaný miestom, kde Héfaistos, boh vulkánu, koval svoje artefakty.",
@@ -158,7 +158,7 @@ export const products = [
     ]
   },
   {
-    id: 3,
+    id: "3",
     title: "Sansone",
     title_image: 'https://storage.googleapis.com/lavastone/sansone/main.jpg',
     title_description: "Pavimenti Sansone sa špecializuje na výrobu cementových dlaždíc, betónového terazza, tvarované betónové podlahy pre exteriér a príslušenstvo. Budeme pri vás stáť ako distribútor pri výbere dizajnu až po realizáciu.",

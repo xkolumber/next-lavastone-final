@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Lavastone | Váš partner pre interiérový dizajn",
   description:
     "Vytvoríme dizajn a prevedenie, ktoré sofistikovaným spôsobom doplní váš interiér či exteriér.",
+  keywords: ["Lavastone", "Interiérový dizajn"],
   openGraph: {
     title: "Lavastone | Váš partner pre interiérový dizajn",
     description:
