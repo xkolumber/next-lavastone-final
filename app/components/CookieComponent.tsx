@@ -1,17 +1,17 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useCookies } from "react-cookie";
-
+import { hasCookie, setCookie } from "cookies-next";
 const CookieComponent = () => {
-  const [cookies, setCookie] = useCookies(["cookieConsent"]);
-
-  const [showCookieComponent, setShowCookieComponent] = useState(
-    !cookies.cookieConsent
-  );
+  const [showCookieComponent, setShowCookieComponent] = useState(false);
   const [showCookieSettings, setShowCookieSettings] = useState(false);
 
+  useEffect(() => {
+    const hasLocalConsent = hasCookie("localConsent");
+    setShowCookieComponent(!hasLocalConsent);
+  }, []);
+
   const handleSetCookie = () => {
-    setCookie("cookieConsent", "accepted", { path: "/" });
+    setCookie("localConsent", "true", {});
     setShowCookieComponent(false);
   };
   const handleCustomize = () => {
@@ -27,10 +27,6 @@ const CookieComponent = () => {
     setShowCookieComponent(false);
     setShowCookieSettings(false);
   };
-
-  useEffect(() => {
-    setShowCookieComponent(!cookies.cookieConsent);
-  }, [cookies.cookieConsent]);
 
   /* Cookie prisposobit */
 

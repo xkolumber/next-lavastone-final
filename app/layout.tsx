@@ -19,7 +19,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Lavastone | Váš partner pre interiérový dizajn",
   description:
-    "Vytvoríme dizajn a prevedenie, ktoré sofistikovaným spôsobom doplní váš interiér či exteriér.",
+    "Vytvoríme dizajn a prevedenie, ktoré sofistikovaným spôsobom doplní Váš interiér či exteriér.",
 };
 
 export default function RootLayout({
@@ -37,6 +37,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </HydrationZustand>
+        <CookieComponent />
       </body>
     </html>
   );

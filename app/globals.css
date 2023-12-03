@@ -452,8 +452,7 @@ li{
     height: 100vh;
   }
   .navbar_both h2{
-
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     opacity: 0.2;
     color: var(--fourthiary-color);
@@ -461,7 +460,7 @@ li{
   }
   .navbar_both p{
 
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     color: var(--fourthiary-color);
     font-size: 2.8rem;
