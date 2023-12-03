@@ -9,6 +9,7 @@ import HydrationZustand from "./components/HydrationZustand";
 import CookieComponent from "./components/CookieComponent";
 import ScrollButtonTop from "./components/ScrollButtonTop";
 import Head from "next/head";
+import GoogleAnalyticsScript from "./GoogleAnalyticsScript";
 
 const manrope = Manrope({
   weight: ["200", "300", "400", "600", "700"],
@@ -28,6 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sk">
+      <GoogleAnalyticsScript />
       <body className={manrope.className}>
         <HydrationZustand>
           <ScrollButtonTop />

@@ -1,3 +1,4 @@
+import ErrorProductPage from "@/app/components/ErrorProductPage";
 import ProductPage from "@/app/components/ProductPage";
 import { products } from "@/app/data/ProductsDataSk";
 
@@ -36,7 +37,7 @@ const Page = ({ params }: { params: { id: string } }) => {
   const productById = products.find((item) => item.id.toString() === params.id);
 
   if (!productById) {
-    return null;
+    return <ErrorProductPage />;
   }
   return (
     <main>

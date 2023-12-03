@@ -94,13 +94,10 @@ li{
         max-width: 800px ;
     }
     .max1200{
-        max-width: 70vw ;
+        max-width: 65vw ;
     }
 }
-@media screen and (min-width:1024px){
-    .change_row_column{
-        gap: 10rem;
-    }
+@media screen and (min-width:1600px){
     .max1200{
         max-width: 80vw ;
     }

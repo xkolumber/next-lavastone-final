@@ -54,10 +54,14 @@ const Navbar = () => {
         custom_class_name = "product_white";
         white_color = "product_white";
         custom_border = "";
-      } else {
+      } else if (productId === "3") {
         custom_class_name = "product_black";
         white_color = "";
         custom_border = "custom_border_primary";
+      } else {
+        custom_class_name = "product_silver";
+        white_color = "";
+        custom_border = "";
       }
     } else {
       if (pathname.includes("/favourite")) {
