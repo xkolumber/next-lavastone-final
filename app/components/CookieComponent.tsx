@@ -23,7 +23,7 @@ const CookieComponent = () => {
     setShowCookieSettings(false);
   };
   const acceptCustomize = () => {
-    setCookie("cookieConsent", "accepted", { path: "/" });
+    setCookie("localConsent", "true", {});
     setShowCookieComponent(false);
     setShowCookieSettings(false);
   };
