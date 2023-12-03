@@ -135,7 +135,10 @@ const Page = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email: data.email, images: favoriteImages }),
+        body: JSON.stringify({
+          email: data.email,
+          images: JSON.parse(localStorage.getItem("favoriteImages") || "[]"),
+        }),
       });
 
       if (response.ok) {
